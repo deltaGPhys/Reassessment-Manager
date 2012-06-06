@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage{type1cm}
+\usepackage{eso-pic}
+\usepackage[hmargin=2cm,vmargin=1.3cm]{geometry}
+\usepackage{mathabx}
+\usepackage[rflt]{/Users/jgates/desktop/latex/floatflt}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+% Watermark: graph paper
+\newcommand\BackgroundPic{
+\put(0,0){
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{/Users/jgates/desktop/latex/pics/plain.pdf}%
+\vfill
+}}}
+
+\begin{document}
+
+% Watermark
+\AddToShipoutPicture{\BackgroundPic}
